@@ -1,0 +1,237 @@
+
+/* -- GENERAL STYLES START -- */
+
+p,
+ul {
+  font-size: 1rem;  /* 14/16 */
+  line-height: 1.5rem; /* 28/14 */
+  margin: 0 0 1.5em; /* 28/14 */
+}
+
+body {
+  background: url('../img/bak-img.jpg');
+  color: #460002;
+  font-family: 'Merriweather', serif;
+}
+
+.wrapper {
+  background: #fff;
+  color: #333;
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 2.0408163265306123% 3.061224489795918%; /* 20/980 | 30/980 */
+}
+/* -- GENERAL STYLES END -- */
+
+
+/* -- NAV (GENERAL) START -- */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a:link,
+nav a:visited {
+  color: #fff;
+  display: flex;
+  text-shadow: 1px 1px 0 #00480a;
+  text-decoration: none;
+}
+/* -- NAV (GENERAL) END -- */
+
+
+/* -- HEADER START -- */
+header {
+  padding: 1% 0; /* 20/980 */
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.logo:link,
+.logo:visited {
+  color: #03480f;
+  text-align: center;
+  text-decoration: none;
+  width: 32.608695652173914%; /* 300/920 */
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+.logo img {
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+}
+
+.site-title {
+  font-size: 2em; /* 32/16 */
+}
+
+.site-tagline {
+  color: #810220;
+  font-size: 1.125em; /* 18/16 */
+}
+
+.header-photo {
+  display: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  width: 67.3913043478261%; /* 620/920 */
+  background: #fff;
+  padding: 4px;
+  border-radius: .25em;
+}
+
+.header-photo img {
+  display: block;
+}
+
+.main-nav {
+  padding: 3.061224489795918% 0 0 0; /* 30/980 */
+  font-size: .9375em; /* 15/16 */
+  z-index: 100;
+}
+
+.main-nav li {
+  margin: 0 .851063829787234% .851063829787234%; /* 8/940 */
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.main-nav li:last-child {
+  margin-right: 0;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  padding: .6666666666666666em; /* 10/15 */
+  border-radius: .3333333333333333em; /* 5/15 */
+  background: #004900;
+  background: linear-gradient(to bottom, #007810 0%, #004911 100%);*/
+}
+
+.main-nav a:hover,
+.main-nav .current a {
+  background: #0a840c;
+  background: -webkit-linear-gradient(top, #43b903 0%, #0a840c 100%);
+  background: -ms-linear-gradient(top, #43b903 0%, #0a840c 100%);
+  background: linear-gradient(to bottom, #43b903 0%, #0a840c 100%);
+}
+
+/* -- HEADER END -- */
+
+h1 {
+	color: #03480f;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	color: #810220;
+	font-size: 1.275em; /* 30/16 */
+	font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em; /* 24/16 */
+}
+
+/* -- FOOTER START -- */
+footer {
+  padding: 1.0204081632653061% 0 0; /* 10/980 */
+}
+
+.footer-nav-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1.0204081632653061%; /* 10/980 */
+}
+
+.footer-nav {
+  background: #007410;
+  /*overflow: auto;*/
+}
+
+.footer-nav ul {
+  font-size: .875em; /* 14/16 */
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  padding: .7142857142857143em; /* 10/14 */
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+/* -- FOOTER END -- */
+
+/* -- media queries start --*/
+
+@media screen and (min-width: 680px) {
+  section,
+  aside {
+    margin: 1.04%;
+  }
+
+  header,
+  .header-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content-container {
+    display: flex;
+  }
+
+  aside {
+    text-align: right;
+    width: 230%;
+  }
+}
+
+@media screen and (min-width: 990px) {
+
+    header,
+    .content-container {
+      display: flex;
+      flex-direction: row;
+    }
+}
+/*
+article {
+  display: flex;
+  width: 100%;
+}
+
+section.content {
+  width: 100%;
+}
+
+aside.content {
+  width: 100%;
+  text-align: right;
+}
+*/
+
+/* -- media queries end --*/
