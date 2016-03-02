@@ -15,8 +15,6 @@ body {
 }
 
 .wrapper {
-  background: #fff;
-  color: #333;
   margin: 0 auto;
   max-width: 980px;
   width: 100%;
@@ -25,19 +23,25 @@ body {
   box-sizing: border-box;
   padding: 0 2.0408163265306123% 3.061224489795918%; /* 20/980 | 30/980 */
 }
+
+.wrapper-skin {
+  background: #fff;
+  color: #333;
+}
 /* -- GENERAL STYLES END -- */
 
 
 /* -- NAV (GENERAL) START -- */
-nav ul {
+.menu_level_0,
+.footer-nav {
   list-style-type: none;
   margin: 0;
   display: flex;
   justify-content: center;
 }
 
-nav a:link,
-nav a:visited {
+.nav a:link,
+.nav a:visited {
   color: #fff;
   display: flex;
   text-shadow: 1px 1px 0 #00480a;
@@ -119,18 +123,21 @@ header {
 .main-nav a:visited {
   padding: .6666666666666666em; /* 10/15 */
   border-radius: .3333333333333333em; /* 5/15 */
-  background: #004900;
-  background: linear-gradient(to bottom, #007810 0%, #004911 100%);*/
 }
 
-.main-nav a:hover,
-.main-nav .current a {
+.main-nav-skin a:link,
+.main-nav-skin a:visited {
+background: #004900;
+background: linear-gradient(to bottom, #007810 0%, #004911 100%);
+}
+
+.main-nav-skin a:hover,
+.main-nav-skin .current a {
   background: #0a840c;
   background: -webkit-linear-gradient(top, #43b903 0%, #0a840c 100%);
   background: -ms-linear-gradient(top, #43b903 0%, #0a840c 100%);
   background: linear-gradient(to bottom, #43b903 0%, #0a840c 100%);
 }
-
 /* -- HEADER END -- */
 
 h1 {
@@ -155,7 +162,7 @@ footer {
   padding: 1.0204081632653061% 0 0; /* 10/980 */
 }
 
-.footer-nav-wrapper {
+.footer-nav {
   margin: 0 auto;
   max-width: 980px;
   width: 100%;
@@ -165,22 +172,22 @@ footer {
   padding: 0 1.0204081632653061%; /* 10/980 */
 }
 
-.footer-nav {
+.footer-nav-wrapper {
   background: #007410;
   /*overflow: auto;*/
 }
 
-.footer-nav ul {
+.footer-nav-wrapper ul {
   font-size: .875em; /* 14/16 */
   font-weight: bold;
   margin: 0 auto;
 }
 
-.footer-nav a {
+.footer-nav-wrapper a {
   padding: .7142857142857143em; /* 10/14 */
 }
 
-.footer-nav a:hover {
+.footer-nav-wrapper a:hover {
   text-decoration: underline;
 }
 /* -- FOOTER END -- */
@@ -212,11 +219,11 @@ footer {
 
 @media screen and (min-width: 990px) {
 
-    header,
-    .content-container {
-      display: flex;
-      flex-direction: row;
-    }
+  header,
+  .content-container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 /*
 article {
