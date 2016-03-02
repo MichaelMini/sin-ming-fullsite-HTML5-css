@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('../web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto-BoldItalic';
+    src: url('../web-fonts/roboto_regular_macroman/Roboto-BoldItalic-webfont.eot');
+    src: url('../web-fonts/roboto_regular_macroman/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-BoldItalic-webfont.woff') format('woff'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-BoldItalic-webfont.ttf') format('truetype'),
+         url('../web-fonts/roboto_regular_macroman/Roboto-BoldItalic-webfont.svg#robotobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 
 /* -- GENERAL STYLES START -- */
 
@@ -77,7 +103,7 @@ header {
   text-align: center;
   text-decoration: none;
   width: 32.608695652173914%; /* 300/920 */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'roboto-BoldItalic', sans-serif;
   font-weight: bold;
   font-style: italic;
   box-sizing: border-box;
@@ -134,11 +160,12 @@ header {
 .main-nav a:visited {
   padding: .6666666666666666em; /* 10/15 */
   border-radius: .3333333333333333em; /* 5/15 */
-  transition: padding .2s, border-radius .8s, ease-in;
+  -webkit-transition: padding .8s, border-radius .8s, ease-in;
+  transition: padding .8s, border-radius .8s, ease-in;
 }
 
 .main-nav a:hover {
-  padding: 1em;
+  padding: 1.1em;
   border-radius: .6em;
 }
 
@@ -200,10 +227,14 @@ footer {
 
 .footer-nav-wrapper a {
   padding: .7142857142857143em; /* 10/14 */
+  font-size: 1.13em;
+  -webkit-transition: font .8s ease-out;
+  transition: font .8s ease-out;
 }
 
 .footer-nav-wrapper a:hover {
   text-decoration: underline;
+  font-size: 1.8em;
 }
 /* -- FOOTER END -- */
 
